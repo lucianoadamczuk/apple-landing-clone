@@ -1,7 +1,15 @@
+import { Carousel } from "./components";
 import { Footer, Navbar } from "./layout";
 import { TempContainer } from "./template";
 
 function App() {
+  const carousel = [
+    "/carousel/img1.jpg",
+    "/carousel/img2.jpg",
+    "/carousel/img3.jpg",
+    "/carousel/img4.png",
+    "/carousel/img5.jpeg",
+  ];
   return (
     <>
       <Navbar />
@@ -67,6 +75,8 @@ function App() {
             src="/appleCard.png"
           />
         </div>
+
+        <Carousel display={carousel} />
       </main>
       <Footer />
     </>

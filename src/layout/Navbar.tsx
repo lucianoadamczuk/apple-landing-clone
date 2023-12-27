@@ -53,7 +53,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={` lg:hidden w-full  py-2 fixed top-0 bg-dark ${
+        className={` lg:hidden w-full  py-2 fixed top-0 bg-dark z-50 ${
           !isOpen && `bg-opacity-80`
         } backdrop-blur-md`}
       >
@@ -67,8 +67,7 @@ export default function Navbar() {
           >
             {links.map((item) => (
               <p key={uuidv4()} className=" py-2 border-b-[1px] text-gray">
-                {" "}
-                {item}{" "}
+                {item}
               </p>
             ))}
           </div>
@@ -76,7 +75,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <nav className=" w-full hidden fixed top-0 py-2 lg:flex bg-dark bg-opacity-80 backdrop-blur-md ">
+      <nav className=" w-full hidden fixed top-0 py-2 lg:flex bg-dark bg-opacity-80 backdrop-blur-md z-50 ">
         <div className="container flex justify-between">
           <img src="/logotipoApple.png" alt="Apple logo" className=" w-5" />
           <div className=" flex text-gray gap-5">
