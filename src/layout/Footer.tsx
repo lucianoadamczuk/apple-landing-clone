@@ -82,7 +82,10 @@ export default function Footer() {
         <p className=" capitalize"> {title} </p>
         <div className="  gap-1">
           {display?.map((item) => (
-            <p key={uuidv4()} className=" text-sm">
+            <p
+              key={uuidv4()}
+              className=" text-sm opacity-60 hover:opacity-100 cursor-pointer"
+            >
               {item}
             </p>
           ))}

@@ -5,8 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// import './styles.css';
-
 // import required modules
 import { Pagination } from "swiper/modules";
 import { Slide } from ".";
@@ -30,10 +28,10 @@ export default function Carousel({ display }: Props) {
         style={{
           height: "90vh",
         }}
-        className=" my-10"
+        className=" my-10 Carousel"
       >
         {display.map((item) => (
-          <SwiperSlide>
+          <SwiperSlide className=" cursor-pointer">
             <Slide image={item} />
           </SwiperSlide>
         ))}

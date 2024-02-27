@@ -66,7 +66,10 @@ export default function Navbar() {
             } overflow-hidden`}
           >
             {links.map((item) => (
-              <p key={uuidv4()} className=" py-2 border-b-[1px] text-gray">
+              <p
+                key={uuidv4()}
+                className=" py-2 border-b-[1px] text-gray hover:underline cursor-pointer"
+              >
                 {item}
               </p>
             ))}
@@ -80,7 +83,10 @@ export default function Navbar() {
           <img src="/logotipoApple.png" alt="Apple logo" className=" w-5" />
           <div className=" flex text-gray gap-5">
             {links.map((item) => (
-              <p key={uuidv4()}> {item} </p>
+              <p key={uuidv4()} className="hover:underline cursor-pointer">
+                {" "}
+                {item}{" "}
+              </p>
             ))}
           </div>
           <Bag />
